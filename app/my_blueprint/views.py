@@ -26,6 +26,7 @@ def create():
 
         db.session.add(log)
         db.session.commit()
+
     return render_template("create.html", example="This is example text.")
 
 @my_blueprint.route("/flashcards", methods=['POST', 'GET'])
@@ -42,7 +43,14 @@ def flashcards():
         log.Condition = request.form['Condition']
         db.session.add(log)
         db.session.commit()
-    return render_template("flashcards.html", example="This is example text.")
+
+        return render_template("flashcards.html", example="This is example text.")
+
+    if request.method == 'GET':
+        results = db.session.query(db.metadata.tables['study'].columns['selectedItems']).filter(db.study.participantID == session['participantID']).all()
+
+        return render_template("flashcards.html", results=results)
+    
 
 @my_blueprint.route("/game", methods=['POST', 'GET'])
 @verify_correct_page
@@ -58,7 +66,13 @@ def game():
         log.Condition = request.form['Condition']
         db.session.add(log)
         db.session.commit()
-    return render_template("game.html", example="This is example text.")
+        
+        return render_template("game.html", example="This is example text.")
+
+    elif request.method == 'GET':
+        results = db.session.query(db.metadata.tables['study'].columns['selectedItems']).filter(db.study.participantID == session['participantID']).all()
+
+        return render_template("game.html", results=results)
 
 
 # debrief
@@ -67,6 +81,7 @@ def game():
 @verify_session_valid
 def debrief():
     return render_template("debrief.html", example="This is example text.")
+
 
 # route to view the database records and export them
 @my_blueprint.route("/analysis")
