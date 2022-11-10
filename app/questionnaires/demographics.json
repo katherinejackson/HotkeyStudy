@@ -2,7 +2,17 @@
     "title": "Demographics",
     "instructions": "Please answer the following questions.",
     "code": "",
-    "questions": [{
+    "questions": [
+        {
+            "questiontype": "field",
+            "instructions": "Please enter an email that we can use to send you a link to the follow up survey:",
+            "decimals": 0,
+            "width": 500,
+            "min": 0,
+            "max": 100,
+            "id": "email"
+        },
+        {
             "questiontype": "drop_down",
             "instructions": "What is your gender?",
             "id": "gender",
@@ -23,6 +33,65 @@
             "min": 0,
             "max": 100,
             "id": "age"
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "What is your highest level of education?",
+            "id": "education",
+            "dropheight": 104,
+            "items": [
+                "Elementary School",
+                "High School",
+                "Post-Secondary School"
+            ]
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "On a scale of 1 to 5, how proficient are you at using hotkeys (keyboard shortcuts)?",
+            "id": "proficient",
+            "dropheight": 104,
+            "items": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "On a scale of 1 to 5, how interested are you in learning hotkeys (keyboard shortcuts)?",
+            "id": "interest",
+            "dropheight": 104,
+            "items": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "questiontype": "field",
+            "instructions": "How many times a day (on average) do you use a hotkey (keyboard shortcut)?",
+            "decimals": 0,
+            "width": 60,
+            "min": 0,
+            "max": 100,
+            "id": "often"
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "On a scale of 1 to 5, how valuable do you think hotkeys(keyboard shortcuts) are?",
+            "id": "value",
+            "dropheight": 104,
+            "items": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
         }
     ]
 }

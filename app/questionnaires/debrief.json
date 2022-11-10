@@ -1,0 +1,43 @@
+{
+    "title": "Debrief",
+    "instructions": "Please answer the following questions.",
+    "code": "",
+    "questions": [
+        {
+        "questiontype": "drop_down",
+        "instructions": "On a scale of 1 to 5, how well do you think you now know the hotkeys you chose to learn in this session?",
+        "id": "improvement",
+        "dropheight": 104,
+        "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "questiontype": "drop_down",
+        "instructions": "On a scale of 1 to 5, how much did you enjoy learning hotkeys in this session?",
+        "id": "enjoy",
+        "dropheight": 104,
+        "items": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "questiontype": "drop_down",
+        "instructions": "Do you think after completing this practice session you will use more hotkeys in the next week?",
+        "id": "use",
+        "dropheight": 104,
+        "items": [
+            "Yes",
+            "No"
+        ]
+    }
+    ]
+}

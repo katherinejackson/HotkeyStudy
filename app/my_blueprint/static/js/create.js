@@ -16,12 +16,16 @@ window.options = {
 trialStartTime = new Date();
 var selectedItems = [];
 
-$('#next-button').unbind('click').click((event) => {
-    logResponse();
-});
+// $('#next-button').unbind('click').click((event) => {
+//     window.localStorage.setItem('selected_items', selectedItems)
+//     logResponse();
+// });
 
 window.itemClicked = (value) => {
-    selectedItems.push(value)
+    selectedItems = value
+    console.log(value)
+    window.localStorage.setItem('selected_items', value)
+    logResponse();
 }
 
 function logResponse() {

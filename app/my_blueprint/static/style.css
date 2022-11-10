@@ -1,13 +1,2 @@
-
-
-#question-label {
-    font-size: 17px;
-}
-
-.form-check-label {
-    font-size: 17px;
-}
-
-.form-check-input {
-    margin-top: 5px !important;
-}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}.App-logo{height:40vmin;pointer-events:none}:root,:root.default{--bg-color:#fff;--text-color:#123}:root.colour{--bg-color:#45adfe;--text-color:#fff}.default{--bg-color:#fff}.blue{--bg-color:#45adfe}.green{--bg-color:#6aff33}.purple{--bg-color:#8358f9}.orange{--bg-color:#f9ab43}body{background-color:#fff;background-color:var(--bg-color);color:#123;color:var(--text-color)}button{border-radius:5px;border-style:none;box-shadow:0 10px 10px 0 rgba(0,0,0,.1),0 6px 10px 0 rgb(0 0 0/5%)}.App{min-height:80vh;padding:2rem}.App,.flashcard{align-items:center;background-color:#fff;background-color:var(--bg-color);display:flex;flex-direction:column}.flashcard{border-radius:25px;box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);font-size:2rem;height:300px;justify-content:center;margin:1rem;width:600px}.flashcard-buttons{display:flex;font-size:3rem;justify-content:space-around}.my-card{align-items:center;background-color:#fff;background-color:var(--bg-color);border-radius:25px;box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);display:flex;flex-direction:column;font-size:1rem;height:120px;justify-content:center;margin:15px;width:120px}.grid{align-items:stretch;display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(8,1fr);justify-items:center}.selected{border-style:solid;border-width:5px}@media (prefers-reduced-motion:no-preference){.App-logo{-webkit-animation:App-logo-spin 20s linear infinite;animation:App-logo-spin 20s linear infinite}}@-webkit-keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes App-logo-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.6c369ff1.css.map*/

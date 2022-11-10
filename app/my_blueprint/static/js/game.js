@@ -7,19 +7,16 @@ var study_options = Object.keys(study_mode_map)
 var sel = (getParticipant() - 1) % study_options.length
 var study_mode = study_options[sel]
 
-
-var selectedItems = document.getElementById('selectedItems').innerHTML.trim();
-
 // Populate the study chart conditions
 window.options = {
     colour_scheme: study_mode_map[study_mode].colour_scheme,
     view: 'game',
-    selectedItems: selectedItems
 };
+
 
 trialStartTime = new Date()
 
-$('#question-box button.next').unbind('click').click((event) => {
+$('#next-button').unbind('click').click((event) => {
     // prevent form from submitting
     logResponse();
 });
