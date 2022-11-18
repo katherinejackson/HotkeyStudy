@@ -16,15 +16,14 @@ window.options = {
 trialStartTime = new Date();
 var selectedItems = [];
 
-// $('#next-button').unbind('click').click((event) => {
-//     window.localStorage.setItem('selected_items', selectedItems)
-//     logResponse();
-// });
-
 window.itemClicked = (value) => {
-    selectedItems = value
-    window.localStorage.setItem('selected_items', value)
-    logResponse();
+    if (value.length > 0) {
+        selectedItems = value
+        window.localStorage.setItem('selected_items', value)
+        logResponse();
+    } else {
+        window.alert("You must select at least one command")
+    }
 }
 
 function logResponse() {

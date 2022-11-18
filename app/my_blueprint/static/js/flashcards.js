@@ -2,6 +2,8 @@ var trialStartTime;
 // First get the condition 
 var condition = getCond();
 
+console.log(condition, getParticipant())
+
 var study_options = Object.keys(study_mode_map)
 // shift id back so ID starts at 0
 var sel = (getParticipant() - 1) % study_options.length
