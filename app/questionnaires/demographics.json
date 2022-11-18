@@ -47,6 +47,22 @@
         },
         {
             "questiontype": "drop_down",
+            "instructions": "How would you classify your cultural background?",
+            "id": "culture",
+            "dropheight": 104,
+            "items": [
+                "North American origins",
+                "European origins",
+                "Caribbean origins",
+                "Latin, Central and South American origins",
+                "African origins",
+                "Asian origins",
+                "Oceanian origins",
+                "Other ethnic and cultural origins"
+            ]
+        },
+        {
+            "questiontype": "drop_down",
             "instructions": "On a scale of 1 to 5, how proficient are you at using hotkeys (keyboard shortcuts)?",
             "id": "proficient",
             "dropheight": 104,

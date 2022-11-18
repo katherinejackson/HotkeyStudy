@@ -10,6 +10,10 @@ def create(db):
         view = db.Column(db.String)
         Condition = db.Column(db.String)
         selectedItems = db.Column(db.String)
+        timesFinished = db.Column(db.String)
+        replayedClick = db.Column(db.String)
+        highScore = db.Column(db.String)
+        finishStack = db.Column(db.String)
     
     return study
 

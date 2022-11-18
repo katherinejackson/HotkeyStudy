@@ -14,6 +14,12 @@ window.options = {
 };
 
 trialStartTime = new Date()
+var stack_finished_count = 0;
+
+window.finishStack = () => {
+    stack_finished_count = stack_finished_count + 1;
+    console.log("num times:", stack_finished_count)
+}
 
 $('#next-button').unbind('click').click((event) => {
     // prevent form from submitting
@@ -21,6 +27,7 @@ $('#next-button').unbind('click').click((event) => {
 });
 
 function logResponse() {
+    console.log(stack_finished_count)
     var endTime = new Date();
     // formulate json to store in DB.
     var trialResult = {
@@ -29,6 +36,7 @@ function logResponse() {
         trialTime: endTime - trialStartTime,
         view: window.options.view,
         Condition: condition,
+        finishStack: stack_finished_count,
     };
 
     $.post("#", trialResult).then(function () {

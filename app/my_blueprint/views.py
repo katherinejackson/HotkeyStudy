@@ -41,6 +41,7 @@ def flashcards():
         log.trialTime = request.form['trialTime']
         log.view = request.form['view']
         log.Condition = request.form['Condition']
+        log.finishStack = request.form['finishStack']
         db.session.add(log)
         db.session.commit()
 
@@ -64,6 +65,9 @@ def game():
         log.trialTime = request.form['trialTime']
         log.view = request.form['view']
         log.Condition = request.form['Condition']
+        log.timesFinished = request.form['timesFinished']
+        log.replayedClick = request.form['replayedClick']
+        log.highScore = request.form['highScore']
         db.session.add(log)
         db.session.commit()
         

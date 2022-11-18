@@ -15,11 +15,23 @@ window.options = {
 
 
 trialStartTime = new Date()
+var timesFinished = 0;
+var replay_click_count = 0;
+var highScore = 0;
 
 $('#next-button').unbind('click').click((event) => {
     // prevent form from submitting
     logResponse();
 });
+
+window.replayedClick = () => {
+    replay_click_count = replay_click_count + 1
+}
+
+window.finishGame = (value) => {
+    timesFinished = timesFinished + 1;
+    highScore = value;
+}
 
 function logResponse() {
     var endTime = new Date();
@@ -30,6 +42,9 @@ function logResponse() {
         trialTime: endTime - trialStartTime,
         view: window.options.view,
         Condition: condition,
+        timesFinished: timesFinished,
+        replayedClick: replay_click_count,
+        highScore: highScore
     };
 
     $.post("#", trialResult).then(function () {

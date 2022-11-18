@@ -23,7 +23,6 @@ var selectedItems = [];
 
 window.itemClicked = (value) => {
     selectedItems = value
-    console.log(value)
     window.localStorage.setItem('selected_items', value)
     logResponse();
 }
