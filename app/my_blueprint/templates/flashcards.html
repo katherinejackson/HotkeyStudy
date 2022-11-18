@@ -18,12 +18,16 @@
     <span id="participant" style="color:white"> {{ session['participantID'] }} </span>
 
     <div class="text-center my-5">
-        <p>Use the flashcards to study the terms that you have picked. Practice for as long as you would like, then
+        <p>Use the flashcards to study the terms that you have picked. Clicking on the card will show the associated
+            hotkey. Use the arrows to navigate to other cards.</p>
+        <p>Practice for as long as you would like, then
             press the 'next' button when you are ready to move on.</p>
-        <p class="text-center mt-4">
+
+        <div id='root'></div>
+        <p class="next-buttons">
             <button class="btn btn-primary next" id="next-button">Next</button>
         </p>
-        <div id='root'></div>
+
     </div>
     <script src="{{ url_for('my_blueprint.static', filename='js/flashcards.js') }}"></script>
     <script src="{{ url_for('my_blueprint.static', filename='hotkey/js/hotkey.js') }}"></script>
