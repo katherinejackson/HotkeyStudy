@@ -5,7 +5,7 @@
     "questions": [
         {
             "questiontype": "field",
-            "instructions": "Please enter an email that we can use to send you a link to the follow up survey:",
+            "instructions": "In order to complete the study, we will send you a follow-up survey in one week.  It will contain a few questions for you to answer.  Please enter an email that we can use to send you a link to the follow up survey:",
             "decimals": 0,
             "width": 500,
             "min": 0,
