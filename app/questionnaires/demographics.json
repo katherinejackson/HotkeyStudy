@@ -36,7 +36,7 @@
         },
         {
             "questiontype": "drop_down",
-            "instructions": "What is your highest level of education?",
+            "instructions": "What is your highest completed level of education?",
             "id": "education",
             "dropheight": 104,
             "items": [
@@ -67,11 +67,11 @@
             "id": "proficient",
             "dropheight": 104,
             "items": [
-                "1",
+                "1 (lowest)",
                 "2",
                 "3",
                 "4",
-                "5"
+                "5 (highest)"
             ]
         },
         {
@@ -80,11 +80,11 @@
             "id": "interest",
             "dropheight": 104,
             "items": [
-                "1",
+                "1 (lowest)",
                 "2",
                 "3",
                 "4",
-                "5"
+                "5 (highest)"
             ]
         },
         {
@@ -102,11 +102,11 @@
             "id": "value",
             "dropheight": 104,
             "items": [
-                "1",
+                "1 (lowest)",
                 "2",
                 "3",
                 "4",
-                "5"
+                "5 (highest)"
             ]
         }
     ]

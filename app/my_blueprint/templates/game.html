@@ -19,15 +19,23 @@
 
     <div class="text-center my-5">
         <div id="study-intro" class="text-left">
-            <p>On this page you can play a matching game to help you learn the hotkeys.  Play for as long as you would like, then when you are finished press the 'next' button.</p>
+            <p>On this page you can play a matching game to help you learn the hotkeys.</p>
+            <p>Instructions:
+            <ul>
+                <li>Click on a command and its corresponding hotkey to eliminate the pair.</li>
+                <li>After you have eliminated all the pairs, time stops and you have completed the game.</li>
+                <li>You can press the 'restart' button to replay the game in order to continue practicing and/or beat your high score.</li>
+            </ul>
+            </p>
+            <p>Play as many times as you would like, then when you are finished press the 'next' button.</p>
             <p class="next-buttons"> <button class="btn btn-primary next" id="next-button">Next</button></p>
             <div id='root'></div>
-            
+
         </div>
     </div>
     <script src="{{ url_for('my_blueprint.static', filename='js/game.js') }}"></script>
     <script src="{{ url_for('my_blueprint.static', filename='hotkey/js/hotkey.js') }}"></script>
-    
+
 </body>
 
 {% endblock %}
